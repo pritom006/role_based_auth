@@ -113,7 +113,28 @@ pip install -r requirements.txt
 }
 ```
 
-### 3. Obtain Token
+### 3. User Logout
+**Endpoint:** `POST /api/auth/logout`
+
+**Authorization:** Bearer Token required
+
+**Body:**
+```json
+{
+    "refresh": "your_refresh_token_here"
+}
+```
+
+**Success Response:** (200 OK)
+```json
+{
+    "success": true,
+    "statusCode": 200,
+    "message": "Successfully logged out"
+}
+```
+
+### 4. Obtain Token
 **Endpoint:** `POST /api/auth/api/token/` or `POST /api/auth/token/obtain/`
 
 **Body:**
@@ -132,7 +153,7 @@ pip install -r requirements.txt
 }
 ```
 
-### 4. Refresh Token
+### 5. Refresh Token
 **Endpoint:** `POST /api/auth/token/refresh/`
 
 **Body:**
@@ -149,7 +170,7 @@ pip install -r requirements.txt
 }
 ```
 
-### 5. List Users
+### 6. List Users
 **Endpoint:** `GET /api/auth/users`
 
 **Authorization:** Bearer Token required
