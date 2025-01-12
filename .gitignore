@@ -1,1 +1,2 @@
 content-venv/*
+**/__pycache__/
